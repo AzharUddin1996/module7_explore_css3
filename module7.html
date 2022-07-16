@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow</title>
+    <script src="https://kit.fontawesome.com/61c6739c6c.js" crossorigin="anonymous"></script>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box-1,
+        .box-2 {
+            border: 2px solid red;
+            width: 200px;
+            height: 200px;
+            /* overflow: hidden; */
+            padding: 10px;
+            /* overflow-y: scroll; */
+            /* overflow-x: scroll; */
+            overflow: scroll;
+        }
+
+        .div1 {
+            width: 100px;
+            border: 3px solid blue;
+            /* overflow: hidden; */
+            /* overflow-x: scroll; */
+
+
+        }
+
+        .div1>p {
+            white-space: nowrap;
+            background-color: chartreuse;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">
+        <p title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, autem?">Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Fugiat, autem?</p>
+    </div>
+    <div class="box-1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae aut dignissimos sed illo ipsum
+            veritatis, repudiandae neque sapiente iusto, sequi iure itaque laboriosam provident ullam omnis odit, ab
+            accusamus! Commodi qui repudiandae officiis corrupti animi, nemo beatae omnis, alias aliquam
+            consequuntur
+            veritatis, repudiandae neque sapiente iusto, sequi iure itaque laboriosam provident ullam omnis odit, ab
+            accusamus! Commodi qui repudiandae officiis corrupti animi, nemo beatae omnis, alias aliquam
+            consequuntur
+            veritatis, repudiandae neque sapiente iusto, sequi iure itaque laboriosam provident ullam omnis odit, ab
+            accusamus! Commodi qui repudiandae officiis corrupti animi, nemo beatae omnis, alias aliquam
+            consequuntur
+            veritatis, repudiandae neque sapiente iusto, sequi iure itaque laboriosam provident ullam omnis odit, ab
+            accusamus! Commodi qui repudiandae officiis corrupti animi, nemo beatae omnis, alias aliquam
+            consequuntur
+            quod reiciendis aliquid vel error optio molestiae. Sed, dolorem.</p>
+    </div>
+    <div class="box-2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae aut dignissimos sed illo ipsum
+            veritatis, repudiandae neque sapiente iusto, sequi iure itaque laboriosam provident ullam omnis odit, ab
+            accusamus! Commodi qui repudiandae officiis corrupti animi, nemo beatae omnis, alias aliquam
+            consequuntur
+            quod reiciendis aliquid vel error optio molestiae. Sed, dolorem.</p>
+    </div>
+    <hr>
+    <br><br>
+    <img src="images/Background.svg" alt="">
+
+    <hr><br><br>
+
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    a star
+    <i class="fa-light fa-star"></i>
+
+    <i class="fa-solid fa-book-sparkles"></i>
+
+
+</body>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fild {
+            width: 80%;
+            height: 70%;
+            border: 5px solid black;
+            margin: 0 auto;
+        }
+
+        .ball {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-image: radial-gradient(green, red);
+            position: relative;
+            top: -100px;
+            left: 350px;
+        }
+
+        .field:hover .ball {
+            transform: translate(1200px, -400px);
+
+            transition: 3s ease-out;
+            transition-delay: .2s;
+
+        }
+
+        .field {
+            border: 1px solid black;
+        }
+
+        .field:hover .bat {
+            transition: .2s ease-in;
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+        .six {
+            display: none;
+
+        }
+
+        .field:hover .six {
+
+            display: block;
+        }
+
+        .six h1 {
+            position: relative;
+            left: 800px;
+            top: 200px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="field">
+        <div class="six">
+            <h1>six</h1>
+        </div>
+        <img class="bat" src="images/31EFTXUWKKL._SY355_.jpg" alt="bat">
+        <div class="ball"></div>
+    </div>
+</body>
+
+</html>
